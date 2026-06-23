@@ -6,6 +6,7 @@
     "expo": "~56.0.12",
     "expo-crypto": "~56.0.4",
     "expo-dev-client": "~56.0.20",
+    "expo-local-authentication": "~56.0.4",
     "expo-secure-store": "~56.0.4",
     "expo-sqlite": "~56.0.5",
     "expo-status-bar": "~56.0.4",
