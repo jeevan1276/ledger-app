@@ -29,8 +29,8 @@ A local-first, encrypted digital khata (ledger) for shop owners. Replaces the pa
 |---|---|---|
 | M0 | Project setup & dev client | ✅ Done |
 | M1 | Encrypted DB foundation | ✅ Done |
-| M2 | App lock (PIN + biometric) | 🔄 In progress |
-| M3 | Data layer: schema + balance logic | ⬜ Pending |
+| M2 | App lock (PIN + biometric) | ✅ Done |
+| M3 | Data layer: schema + balance logic | ✅ Done |
 | M4 | Contacts UI | ⬜ Pending |
 | M5 | Transactions UI | ⬜ Pending |
 | M6 | Dashboard | ⬜ Pending |
