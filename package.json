@@ -5,6 +5,7 @@
   "dependencies": {
     "@types/jest": "29.5.14",
     "expo": "~56.0.12",
+    "expo-av": "^16.0.8",
     "expo-crypto": "~56.0.4",
     "expo-dev-client": "~56.0.20",
     "expo-local-authentication": "~56.0.4",
@@ -21,9 +22,8 @@
     "typescript": "~6.0.3"
   },
   "jest": {
-  "preset": "jest-expo"
-},
-
+    "preset": "jest-expo"
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
