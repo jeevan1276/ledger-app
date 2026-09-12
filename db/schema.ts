@@ -20,10 +20,26 @@ export const CREATE_TABLES = `
     date         TEXT NOT NULL,
     note         TEXT,
     media_uri    TEXT,
+    audio_uri    TEXT,  
     created_at   TEXT NOT NULL,
     updated_at   TEXT NOT NULL
   );
 
   CREATE INDEX IF NOT EXISTS idx_txn_contact_id ON txn(contact_id);
   CREATE INDEX IF NOT EXISTS idx_txn_date ON txn(date);
+  
+  CREATE TABLE IF NOT EXISTS quick_note (
+  id           TEXT PRIMARY KEY NOT NULL,
+  audio_uri    TEXT NOT NULL,
+  duration_sec INTEGER NOT NULL DEFAULT 0,
+  note         TEXT,
+  is_processed INTEGER NOT NULL DEFAULT 0
+                 CHECK (is_processed IN (0, 1)),
+  contact_id   TEXT REFERENCES contact(id),
+  created_at   TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_quick_note_unprocessed
+  ON quick_note(is_processed)
+  WHERE is_processed = 0;
 `;

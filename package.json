@@ -5,7 +5,7 @@
   "dependencies": {
     "@types/jest": "29.5.14",
     "expo": "~56.0.12",
-    "expo-av": "^16.0.8",
+    "expo-audio": "~56.0.13",
     "expo-crypto": "~56.0.4",
     "expo-dev-client": "~56.0.20",
     "expo-local-authentication": "~56.0.4",

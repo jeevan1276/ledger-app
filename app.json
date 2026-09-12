@@ -29,9 +29,12 @@
     "plugins": [
       [
         "expo-sqlite",
-         {"useSQLCipher": true}
+        {
+          "useSQLCipher": true
+        }
       ],
-      "expo-secure-store"
+      "expo-secure-store",
+      "expo-audio"
     ]
   }
 }
